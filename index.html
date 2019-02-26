@@ -9,12 +9,27 @@
 
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="/manifest.json">
+            <!-- Firebase App is always required and must be first -->
+    <script src="/__/firebase/5.8.4/firebase-app.js"></script>
 
+    <!-- Add additional services that you want to use -->
+    <script src="/__/firebase/5.8.4/firebase-auth.js"></script>
+    <script src="/__/firebase/5.8.4/firebase-database.js"></script>
+    <script src="/__/firebase/5.8.4/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.8.4/firebase-functions.js"></script>
+
+    <!-- Comment out (or don't include) services that you don't want to use -->
+    <!-- <script src="/__/firebase/5.8.4/firebase-storage.js"></script> -->
+
+    <script src="/__/firebase/init.js"></script>
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-
-    <script type="module" src="/src/polypage1-app/polypage1-app.js" crossorigin></script>
+    <script type="module" src="/src/components/Header.js" crossorigin></script>
+    <script type="module" src="/src/components/CreateRecipe.js" crossorigin></script>
   </head>
   <body>
-    <polypage1-app></polypage1-app>
+    <header>
+      <logo-header></logo-header>
+    </header>
+    <create-recipe></create-recipe>
   </body>
 </html>

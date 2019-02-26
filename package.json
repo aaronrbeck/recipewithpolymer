@@ -2,7 +2,8 @@
   "name": "polypage1",
   "dependencies": {
     "@polymer/iron-form": "^3.0.1",
-    "@polymer/polymer": "^3.0.0"
+    "@polymer/polymer": "^3.0.0",
+    "polymer": "^0.5.0"
   },
   "devDependencies": {
     "@polymer/test-fixture": "^4.0.2",

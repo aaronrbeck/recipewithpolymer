@@ -1,0 +1,6 @@
+{
+  "name": "polypage1",
+  "short_name": "polypage1",
+  "start_url": "/",
+  "display": "standalone"
+}

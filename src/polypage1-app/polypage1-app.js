@@ -62,15 +62,16 @@ class Polypage1App extends PolymerElement {
       prop2: {
         type: String,
 
-      }
+      },
       prop3: {
           type: String,
           value: 'recipes',
           reflectToAttribute: true,
           notify: true
-
-  
-      },
+            },
+      props4: {
+        type: String
+      }
     };
   }
 }

@@ -1,4 +1,9 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+import {LitElement, html, css, customElement, property} from 'lit-element';
+import '@polymer/iron-ajax/iron-ajax.js';
+
+
+
 
 
 
@@ -37,7 +42,7 @@ class Polypage1App extends PolymerElement {
       <h2>Hello [[prop1]]!</h2>
       <form onSubmit={this.handleSubmit}>
       <input type="text" name="name" value="recipe title">
-      <input type="textarea" name="name" value="indredients">
+      <input type="textarea" name="name" value="ingredients">
       <input type="textarea" name="name" value="directions">
       <input type="text" name="name" value="category">
         <button type="submit" name="submit" onclick="myFunction()">Submit</button>
@@ -46,9 +51,13 @@ class Polypage1App extends PolymerElement {
   }
   static get properties() {
     return {
-      prop1: {
+        prop1: {
         type: String,
         value: 'recipes'
+        },
+        title: {
+          type:String
+        }
       }
     };
   }

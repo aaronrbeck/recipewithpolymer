@@ -1,6 +1,7 @@
 {
   "name": "polypage1",
   "dependencies": {
+    "@polymer/iron-ajax": "^3.0.1",
     "@polymer/iron-form": "^3.0.1",
     "@polymer/paper-input": "^3.0.1",
     "@polymer/polymer": "^3.0.0",

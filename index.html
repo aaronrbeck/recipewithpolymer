@@ -21,17 +21,17 @@
         firebase.initializeApp(config);
       </script> -->
     <!-- Firebase App is always required and must be first -->
-<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
 
 <!-- Add additional services that you want to use -->
-<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-functions.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-functions.js"></script>
 
 <!-- Comment out (or don't include) services that you don't want to use -->
-<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-storage.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-storage.js"></script>
 
 <!-- <script>
   var config = {
@@ -59,10 +59,33 @@
          
       //  }
     </script>
+    
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDjxTJxpIsEF9GnT3eWoemodqvjFWZFPLg",
+    authDomain: "recipebox-292a4.firebaseapp.com",
+    databaseURL: "https://recipebox-292a4.firebaseio.com",
+    projectId: "recipebox-292a4",
+    storageBucket: "recipebox-292a4.appspot.com",
+    messagingSenderId: "315028317743"
+  };
+  firebase.initializeApp(config);
+</script>
 
+<script>
+
+hello = exports.helloWorld = functions.https.onRequest((request, response) => {
+  response.send("Hello from a Severless Database!");
+});
+
+
+</script>
   </head>
   <body>
     <header>
+      <button onsubmit="">Hello</button>
       <div><script>"{{title.value}}"</script></div>
       <logo-header></logo-header>
       <!-- <post></post> -->

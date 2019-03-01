@@ -41,23 +41,28 @@ export class CreateRecipe extends PolymerElement {
         }
       </style>
       <h2>Hello [[prop1]]!</h2>
-      <form onSubmit={this.handleSubmit}>
-          <input type="text" name="title" value="{{title::change}}" 
-          
+      <form'>
+          <input type="text" name="title"
+          onchange='data()'
+          value="{{title::change}}"
           attribute = "title" placeholder="Recipe Title">
           
-        <button type="submit" name="submit" on-click="handleClick()">Submit</button>
+        <button type="submit" name="submit" on-click="handleSubmit">Submit</button>
       </form>
       <div>
       [[title]]
       </div>
-
+      <script>
+      const data = () => 
+      return console.log("hello")
+      </script>
     `;
   }
-  handleClick() { 
-  title = title.value
-
-}}
+  handleSubmit(){
+    alert("Hello")
+  }
+ 
+}
 
   
 

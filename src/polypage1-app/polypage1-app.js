@@ -1,6 +1,6 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
-import {LitElement, html, css, customElement, property} from 'lit-element';
-import '@polymer/iron-ajax/iron-ajax.js';
+// import {LitElement, html, css, customElement, property} from 'lit-element';
+// import '@polymer/iron-ajax/iron-ajax.js';
 
 
 
@@ -18,17 +18,6 @@ import '@polymer/iron-ajax/iron-ajax.js';
 
 // handleSubmit Function that we need to write
 
-// handleSubmit = (e) =>{
-//   e.preventDefault();
-//   const data = JSON.stringify({...this.state});
-//   fetch("http://localhost:4000", {
-//     method: "Post",
-//     body: data,
-//     headers: {
-//         "Content-Type":"application/json"
-//     }
-//   })
-// }
 
 
 class Polypage1App extends PolymerElement {

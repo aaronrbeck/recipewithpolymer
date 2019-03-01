@@ -6,9 +6,8 @@
 
     <title>polypage1</title>
     <meta name="description" content="polypage1 description">
-
-    
-      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+   
+      <!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
       <script>
         // Initialize Firebase
         var config = {
@@ -20,26 +19,26 @@
           messagingSenderId: "315028317743"
         };
         firebase.initializeApp(config);
-      </script>
+      </script> -->
     <!-- Firebase App is always required and must be first -->
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script> -->
 
 <!-- Add additional services that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-functions.js"></script> -->
 
 <!-- Comment out (or don't include) services that you don't want to use -->
 <!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-storage.js"></script> -->
 
-<script>
+<!-- <script>
   var config = {
     "name": "name3"
   };
   firebase.initializeApp(config);
-</script>
+</script> -->
 
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script type="module" src="/src/components/Header.js" crossorigin></script>
@@ -48,10 +47,23 @@
       import '@polymer/paper-input/paper-input.js';
     </script> -->
 
+    <script>
+      import{title} from '/components/CreateRecipe.js'
+       const functions = require("firebase-functions");
+      const cors = require('cors')({ origin: true });
+      const admin = require('firebase-admin');
+      // let title = {
+      //    type: String,
+      //    notify: true,
+      //    reflectToAttribute: true,
+         
+      //  }
+    </script>
 
   </head>
   <body>
     <header>
+      <div><script>"{{title.value}}"</script></div>
       <logo-header></logo-header>
       <!-- <post></post> -->
     </header>

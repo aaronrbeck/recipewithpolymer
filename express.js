@@ -13,7 +13,7 @@ db.then(() =>{
 })
 
 const recipes = db.get("recipes_Collection")
-
+import {title} from '/src/components/CreateRecipe.js'
 app.use(cors())
 app.use(bodyParser.json())
 
@@ -22,7 +22,7 @@ app.get('/', async function(req, res){
     res.status(200).send(results)
 })
 app.post('.', async function(req, res){
-    const results = await recipes.insert(req.body)
+    const results = await title.insert(req.body)
     res.status(200).send(results)
 })
 app.listen(port, () => console.log("App is listening on port ${port}!"))

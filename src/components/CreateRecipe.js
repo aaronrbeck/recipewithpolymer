@@ -3,6 +3,9 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 // import '@polymer/iron-ajax/iron-ajax.js';
 // import '@polymer/iron-form/iron-form.js';
 // import '@polymer/paper-input/paper-input.js';
+// const functions = require("firebase-functions");
+// const cors = require('cors')({ origin: true });
+// const admin = require('firebase-admin');
 
 /**
  * @customElement
@@ -64,8 +67,9 @@ export class CreateRecipe extends PolymerElement {
  
 }
 
-  
+
 
 
 
 window.customElements.define('create-recipe', CreateRecipe);
+CreateRecipe.export (title)

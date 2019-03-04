@@ -6,6 +6,7 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 // const functions = require("firebase-functions");
 // const cors = require('cors')({ origin: true });
 // const admin = require('firebase-admin');
+// import firebase from "firebase"
 
 /**
  * @customElement
@@ -28,7 +29,7 @@ export class CreateRecipe extends PolymerElement {
          type: String,
          notify: true,
          reflectToAttribute: true,
-         
+         value: "cheese"
        }
      
     };
@@ -44,26 +45,50 @@ export class CreateRecipe extends PolymerElement {
         }
       </style>
       <h2>Hello [[prop1]]!</h2>
-      <form'>
+      <form>
           <input type="text" name="title"
           onchange='data()'
           value="{{title::change}}"
-          attribute = "title" placeholder="Recipe Title">
+          placeholder="Recipe Title"
+          attribute= "title">
           
-        <button type="submit" name="submit" on-click="handleSubmit">Submit</button>
+        <button type="submit" name="submit"  on-click="handleSubmit2">Submit</button>
       </form>
       <div>
       [[title]]
       </div>
+
+  
       <script>
       const data = () => 
       return console.log("hello")
       </script>
     `;
   }
-  handleSubmit(){
-    alert("Hello")
+  handleSubmit2(){
+    alert('${title}')
   }
+//   hello = handleSubmit =( ) => { exports.addItem = functions.https.onRequest((req, res) => {
+//         return cors(req, res, () => {
+//           if(req.method !== 'POST') {
+//             return res.status(401).json({
+//               message: 'Not allowed'
+//             })
+//           }
+//           const title = req.body[0]
+//           database.push(req.body);
+//           // const item = req.body.item;
+//           // database.push({ item });
+//           getItemsFromDatabase(res)
+//         });
+// });
+
+
+
+//  hello = exports.helloWorld = functions.https.onRequest((request, response) => {
+//   response.send("Hello frs Database!");
+// });
+  // }
  
 }
 

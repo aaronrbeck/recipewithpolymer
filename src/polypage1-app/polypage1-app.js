@@ -40,7 +40,7 @@ class Polypage1App extends PolymerElement {
   }
   static get properties() {
     return {
-        prop1: {
+        title: {
         type: String,
         value: 'recipes',
         reflectToAttribute: true,
@@ -48,26 +48,6 @@ class Polypage1App extends PolymerElement {
 
         },
         
-      prop2: {
-        type: String,
 
-      },
-      prop3: {
-          type: String,
-          value: 'recipes',
-          reflectToAttribute: true,
-          notify: true
-            },
-      props4: {
-        type: String
-
-      },
-      prop5: {
-        type:Boolean,
-        value:"lot a props"
-      }
-    };
-  }
-}
 
 window.customElements.define('polypage1-app', Polypage1App);
